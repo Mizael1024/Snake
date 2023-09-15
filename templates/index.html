@@ -1,0 +1,29 @@
+## templates/index.html
+"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio to Text Converter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Audio to Text Converter</h1>
+
+    <form action="/convert" method="post" enctype="multipart/form-data">
+        <input type="file" name="audio_file" accept="audio/*" required>
+        <button type="submit">Convert</button>
+    </form>
+
+    <div id="result"></div>
+
+    <button id="copyBtn">Copy Text</button>
+
+    <h2>Previous Conversions</h2>
+    <div id="history"></div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
+"""
